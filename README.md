@@ -1,9 +1,6 @@
 # ML Bootcamp – Data Preparation Pipelines
 
 This project builds two reusable data preparation pipelines using real-world datasets. The goal is to practice framing data science questions, defining business metrics, and constructing end-to-end data preparation workflows that output model-ready train, tune, and test datasets.
-
-Each pipeline is implemented as a sequence of reusable functions (a data prep DAG) rather than a single monolithic script.
-
 ---
 
 ## Repository Structure
@@ -27,14 +24,14 @@ ML-BOOTCAMP-DATA-PIPELINES/
 ## Dataset 1: College Completion
 
 **Dataset:**  
-IPEDS-based institutional college completion data (`cc_institution_details.csv`).
+Institutional college completion data (`cc_institution_details.csv`).
 
 ### Problem Question
 Can institutional characteristics be used to predict whether a college has a high student completion rate?
 
 ### Business Metric / Target
-High vs. low completion, defined using the IPEDS-standard **150% graduation rate** (`grad_150_value`).  
-Institutions with a 150% graduation rate greater than or equal to 0.5 are labeled as high completion.
+High vs. low completion, defined using the **150% graduation rate** (`grad_150_value`).  
+Institutions with a 150%  (6 Year)graduation rate greater than or equal to 0.7 are labeled as high completion.
 
 ### Data Preparation Steps
 - Created a binary target variable from the 150% graduation rate
