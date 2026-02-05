@@ -7,7 +7,7 @@ def load_college_data():
         "data/cpipline/cc_institution_details.csv"
     )
 
-def create_target(df, cutoff=0.5):
+def create_target(df, cutoff=0.7):
     df = df.copy()
     df["high_completion"] = (df["grad_150_value"] >= cutoff).astype(int)
     return df
